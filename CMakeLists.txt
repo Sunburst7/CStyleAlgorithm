@@ -15,22 +15,27 @@ set(LIB_DEFINE)                                                         # lib's 
 set(LIB_COMPILE_OPTIONS -Wall -fPIC -shared)                            # lib's compile options
 set(LIB_SOURCE)                                                         # lib's source file
 set(LIB_HEADER)                                                         # lib's header file
+set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/out)                                                      
 file(GLOB LIB_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c")
 file(GLOB LIB_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
 file(COPY ${LIB_HEADER} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/tests)
 
-set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/out) 
 
-if ("${BUILD_TYPE}" STREQUAL "Debug")
+option(BUILD_DEBUG "Build On Debug Mode" OFF)
+option(BUILD_TRACE "Build Open Algorithm Trace" OFF)
+
+if (BUILD_DEBUG)
 	set(LIB_DEFINE ${LIB_DEFINE} _DEBUG)
 	set(LIB_COMPILE_OPTIONS ${LIB_COMPILE_OPTIONS} -O0 -g)
-elseif("${BUILD_TYPE}" STREQUAL "Release")
-	set(LIB_COMPILE_OPTIONS ${LIB_COMPILE_OPTIONS} -O5)
 else()
 	set(LIB_COMPILE_OPTIONS ${LIB_COMPILE_OPTIONS} -O5)
 endif()
 
-message("Lib Build Type: ${BUILD_TYPE}")
+if (BUILD_TRACE)
+    set(LIB_DEFINE ${LIB_DEFINE} LOG_TRACE_ON)
+endif()
+
+message("Lib Build Type Is Debug: ${BUILD_DEBUG}")
 message("Lib Output Path: ${LIBRARY_OUTPUT_DDIRECTORY}") 
 message("Lib Name: ${LIB_NAME}") 
 message("Lib Compile Options: ${LIB_COMPILE_OPTIONS}")

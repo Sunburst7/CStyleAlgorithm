@@ -8,7 +8,7 @@
 // Arc Node
 typedef struct ArcNode {
 	int adjvex;			// node index
-	ArcNode* nextarc;
+	struct ArcNode* nextarc;
 	//ValueType value;	// arc weigh value
 } ArcNode;
 
@@ -22,6 +22,9 @@ typedef struct VNode {
 typedef struct Graph{
 	AdjList vertices;
 	int vexnum, arcnum;
-}AGraph; 
+}Graph, *GraphPtr; 
+
+void CreateGraph(GraphPtr graph);
+void FreeGraph(GraphPtr graph);
 
 #endif // _GRAPH_H_

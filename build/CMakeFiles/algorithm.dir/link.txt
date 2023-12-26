@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libalgorithm.so -o ../out/libalgorithm.so CMakeFiles/algorithm.dir/src/Graph.c.o 

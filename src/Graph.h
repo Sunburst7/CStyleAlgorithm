@@ -1,5 +1,6 @@
 #ifndef _GRAPH_H_
 #define _GRAPH_H_
+#include "Error.h"
 
 #define MAX_VERTEX_NUM 10
 #define ValueType int
@@ -8,7 +9,7 @@
 // Arc Node
 typedef struct ArcNode {
 	int adjvex;			// node index
-	ArcNode* nextarc;
+	struct ArcNode* nextarc;
 	//ValueType value;	// arc weigh value
 } ArcNode;
 
@@ -22,6 +23,9 @@ typedef struct VNode {
 typedef struct Graph{
 	AdjList vertices;
 	int vexnum, arcnum;
-}AGraph; 
+}Graph; 
+
+ERRNO CreateGraph(Graph* graph, int vexnum);
+ERRNO FreeGraph(Graph* graph);
 
 #endif // _GRAPH_H_
