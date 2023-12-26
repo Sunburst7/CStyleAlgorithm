@@ -15,7 +15,7 @@ set(LIB_DEFINE)                                                         # lib's 
 set(LIB_COMPILE_OPTIONS -Wall -fPIC -shared)                            # lib's compile options
 set(LIB_SOURCE)                                                         # lib's source file
 set(LIB_HEADER)                                                         # lib's header file
-file(GLOB LIB_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file(GLOB LIB_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c")
 file(GLOB LIB_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
 file(COPY ${LIB_HEADER} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/tests)
 
