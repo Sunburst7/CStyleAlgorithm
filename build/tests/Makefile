@@ -31,6 +31,9 @@ default_target: all
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -117,6 +120,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tests/CMakeFiles/queue_test.dir/rule:
+	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/queue_test.dir/rule
+.PHONY : tests/CMakeFiles/queue_test.dir/rule
+
+# Convenience name for target.
+queue_test: tests/CMakeFiles/queue_test.dir/rule
+.PHONY : queue_test
+
+# fast build rule for target.
+queue_test/fast:
+	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/queue_test.dir/build.make tests/CMakeFiles/queue_test.dir/build
+.PHONY : queue_test/fast
+
+# Convenience name for target.
 tests/CMakeFiles/graph_test.dir/rule:
 	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/graph_test.dir/rule
 .PHONY : tests/CMakeFiles/graph_test.dir/rule
@@ -154,6 +171,30 @@ GraphTest.cpp.s:
 	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/GraphTest.cpp.s
 .PHONY : GraphTest.cpp.s
 
+QueueTest.o: QueueTest.cpp.o
+.PHONY : QueueTest.o
+
+# target to build an object file
+QueueTest.cpp.o:
+	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/queue_test.dir/build.make tests/CMakeFiles/queue_test.dir/QueueTest.cpp.o
+.PHONY : QueueTest.cpp.o
+
+QueueTest.i: QueueTest.cpp.i
+.PHONY : QueueTest.i
+
+# target to preprocess a source file
+QueueTest.cpp.i:
+	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/queue_test.dir/build.make tests/CMakeFiles/queue_test.dir/QueueTest.cpp.i
+.PHONY : QueueTest.cpp.i
+
+QueueTest.s: QueueTest.cpp.s
+.PHONY : QueueTest.s
+
+# target to generate assembly for a file
+QueueTest.cpp.s:
+	cd /home/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/queue_test.dir/build.make tests/CMakeFiles/queue_test.dir/QueueTest.cpp.s
+.PHONY : QueueTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +204,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... graph_test"
+	@echo "... queue_test"
 	@echo "... GraphTest.o"
 	@echo "... GraphTest.i"
 	@echo "... GraphTest.s"
+	@echo "... QueueTest.o"
+	@echo "... QueueTest.i"
+	@echo "... QueueTest.s"
 .PHONY : help
 
 

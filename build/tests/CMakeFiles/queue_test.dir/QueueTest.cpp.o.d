@@ -1,5 +1,5 @@
-tests/CMakeFiles/graph_test.dir/GraphTest.cpp.o: \
- /home/CStyleAlgorithm/tests/GraphTest.cpp /usr/include/stdc-predef.h \
+tests/CMakeFiles/queue_test.dir/QueueTest.cpp.o: \
+ /home/CStyleAlgorithm/tests/QueueTest.cpp /usr/include/stdc-predef.h \
  /usr/local/include/gtest/gtest.h /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -278,6 +278,6 @@ tests/CMakeFiles/graph_test.dir/GraphTest.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/CStyleAlgorithm/tests/Graph.h /home/CStyleAlgorithm/tests/Core.h \
+ /home/CStyleAlgorithm/tests/Queue.h /home/CStyleAlgorithm/tests/Core.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /home/CStyleAlgorithm/tests/Alglog.h

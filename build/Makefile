@@ -130,6 +130,19 @@ algorithm/fast:
 .PHONY : algorithm/fast
 
 #=============================================================================
+# Target rules for targets named queue_test
+
+# Build rule for target.
+queue_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 queue_test
+.PHONY : queue_test
+
+# fast build rule for target.
+queue_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/queue_test.dir/build.make tests/CMakeFiles/queue_test.dir/build
+.PHONY : queue_test/fast
+
+#=============================================================================
 # Target rules for targets named graph_test
 
 # Build rule for target.
@@ -142,29 +155,77 @@ graph_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/build
 .PHONY : graph_test/fast
 
-src/Graph.o: src/Graph.c.o
+src/Graph.o: src/Graph.cc.o
 .PHONY : src/Graph.o
 
 # target to build an object file
-src/Graph.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Graph.c.o
-.PHONY : src/Graph.c.o
+src/Graph.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Graph.cc.o
+.PHONY : src/Graph.cc.o
 
-src/Graph.i: src/Graph.c.i
+src/Graph.i: src/Graph.cc.i
 .PHONY : src/Graph.i
 
 # target to preprocess a source file
-src/Graph.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Graph.c.i
-.PHONY : src/Graph.c.i
+src/Graph.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Graph.cc.i
+.PHONY : src/Graph.cc.i
 
-src/Graph.s: src/Graph.c.s
+src/Graph.s: src/Graph.cc.s
 .PHONY : src/Graph.s
 
 # target to generate assembly for a file
-src/Graph.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Graph.c.s
-.PHONY : src/Graph.c.s
+src/Graph.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Graph.cc.s
+.PHONY : src/Graph.cc.s
+
+src/Queue.o: src/Queue.cc.o
+.PHONY : src/Queue.o
+
+# target to build an object file
+src/Queue.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Queue.cc.o
+.PHONY : src/Queue.cc.o
+
+src/Queue.i: src/Queue.cc.i
+.PHONY : src/Queue.i
+
+# target to preprocess a source file
+src/Queue.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Queue.cc.i
+.PHONY : src/Queue.cc.i
+
+src/Queue.s: src/Queue.cc.s
+.PHONY : src/Queue.s
+
+# target to generate assembly for a file
+src/Queue.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Queue.cc.s
+.PHONY : src/Queue.cc.s
+
+src/Stack.o: src/Stack.cc.o
+.PHONY : src/Stack.o
+
+# target to build an object file
+src/Stack.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Stack.cc.o
+.PHONY : src/Stack.cc.o
+
+src/Stack.i: src/Stack.cc.i
+.PHONY : src/Stack.i
+
+# target to preprocess a source file
+src/Stack.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Stack.cc.i
+.PHONY : src/Stack.cc.i
+
+src/Stack.s: src/Stack.cc.s
+.PHONY : src/Stack.s
+
+# target to generate assembly for a file
+src/Stack.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/Stack.cc.s
+.PHONY : src/Stack.cc.s
 
 # Help Target
 help:
@@ -176,9 +237,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
 	@echo "... graph_test"
+	@echo "... queue_test"
 	@echo "... src/Graph.o"
 	@echo "... src/Graph.i"
 	@echo "... src/Graph.s"
+	@echo "... src/Queue.o"
+	@echo "... src/Queue.i"
+	@echo "... src/Queue.s"
+	@echo "... src/Stack.o"
+	@echo "... src/Stack.i"
+	@echo "... src/Stack.s"
 .PHONY : help
 
 

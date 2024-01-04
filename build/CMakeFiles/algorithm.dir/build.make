@@ -69,31 +69,63 @@ include CMakeFiles/algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/algorithm.dir/flags.make
 
-CMakeFiles/algorithm.dir/src/Graph.c.o: CMakeFiles/algorithm.dir/flags.make
-CMakeFiles/algorithm.dir/src/Graph.c.o: ../src/Graph.c
-CMakeFiles/algorithm.dir/src/Graph.c.o: CMakeFiles/algorithm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/CStyleAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/algorithm.dir/src/Graph.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/algorithm.dir/src/Graph.c.o -MF CMakeFiles/algorithm.dir/src/Graph.c.o.d -o CMakeFiles/algorithm.dir/src/Graph.c.o -c /home/CStyleAlgorithm/src/Graph.c
+CMakeFiles/algorithm.dir/src/Graph.cc.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/src/Graph.cc.o: ../src/Graph.cc
+CMakeFiles/algorithm.dir/src/Graph.cc.o: CMakeFiles/algorithm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/CStyleAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/src/Graph.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/src/Graph.cc.o -MF CMakeFiles/algorithm.dir/src/Graph.cc.o.d -o CMakeFiles/algorithm.dir/src/Graph.cc.o -c /home/CStyleAlgorithm/src/Graph.cc
 
-CMakeFiles/algorithm.dir/src/Graph.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/algorithm.dir/src/Graph.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/CStyleAlgorithm/src/Graph.c > CMakeFiles/algorithm.dir/src/Graph.c.i
+CMakeFiles/algorithm.dir/src/Graph.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/src/Graph.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/CStyleAlgorithm/src/Graph.cc > CMakeFiles/algorithm.dir/src/Graph.cc.i
 
-CMakeFiles/algorithm.dir/src/Graph.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/algorithm.dir/src/Graph.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/CStyleAlgorithm/src/Graph.c -o CMakeFiles/algorithm.dir/src/Graph.c.s
+CMakeFiles/algorithm.dir/src/Graph.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/src/Graph.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/CStyleAlgorithm/src/Graph.cc -o CMakeFiles/algorithm.dir/src/Graph.cc.s
+
+CMakeFiles/algorithm.dir/src/Queue.cc.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/src/Queue.cc.o: ../src/Queue.cc
+CMakeFiles/algorithm.dir/src/Queue.cc.o: CMakeFiles/algorithm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/CStyleAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithm.dir/src/Queue.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/src/Queue.cc.o -MF CMakeFiles/algorithm.dir/src/Queue.cc.o.d -o CMakeFiles/algorithm.dir/src/Queue.cc.o -c /home/CStyleAlgorithm/src/Queue.cc
+
+CMakeFiles/algorithm.dir/src/Queue.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/src/Queue.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/CStyleAlgorithm/src/Queue.cc > CMakeFiles/algorithm.dir/src/Queue.cc.i
+
+CMakeFiles/algorithm.dir/src/Queue.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/src/Queue.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/CStyleAlgorithm/src/Queue.cc -o CMakeFiles/algorithm.dir/src/Queue.cc.s
+
+CMakeFiles/algorithm.dir/src/Stack.cc.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/src/Stack.cc.o: ../src/Stack.cc
+CMakeFiles/algorithm.dir/src/Stack.cc.o: CMakeFiles/algorithm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/CStyleAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithm.dir/src/Stack.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/src/Stack.cc.o -MF CMakeFiles/algorithm.dir/src/Stack.cc.o.d -o CMakeFiles/algorithm.dir/src/Stack.cc.o -c /home/CStyleAlgorithm/src/Stack.cc
+
+CMakeFiles/algorithm.dir/src/Stack.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/src/Stack.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/CStyleAlgorithm/src/Stack.cc > CMakeFiles/algorithm.dir/src/Stack.cc.i
+
+CMakeFiles/algorithm.dir/src/Stack.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/src/Stack.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/CStyleAlgorithm/src/Stack.cc -o CMakeFiles/algorithm.dir/src/Stack.cc.s
 
 # Object files for target algorithm
 algorithm_OBJECTS = \
-"CMakeFiles/algorithm.dir/src/Graph.c.o"
+"CMakeFiles/algorithm.dir/src/Graph.cc.o" \
+"CMakeFiles/algorithm.dir/src/Queue.cc.o" \
+"CMakeFiles/algorithm.dir/src/Stack.cc.o"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
 
-../out/libalgorithm.so: CMakeFiles/algorithm.dir/src/Graph.c.o
+../out/libalgorithm.so: CMakeFiles/algorithm.dir/src/Graph.cc.o
+../out/libalgorithm.so: CMakeFiles/algorithm.dir/src/Queue.cc.o
+../out/libalgorithm.so: CMakeFiles/algorithm.dir/src/Stack.cc.o
 ../out/libalgorithm.so: CMakeFiles/algorithm.dir/build.make
 ../out/libalgorithm.so: CMakeFiles/algorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/CStyleAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library ../out/libalgorithm.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/CStyleAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../out/libalgorithm.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

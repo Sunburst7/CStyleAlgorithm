@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.28)
 enable_language(CXX)
 if (CMAKE_VERSION VERSION_LESS "3.1")
     if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-        set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++17 -Wno-narrowing -g ")
+        set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++17 -Wno-narrowing")
     endif ()
 else ()
     set (CMAKE_CXX_STANDARD 17)
@@ -16,7 +16,7 @@ set(LIB_COMPILE_OPTIONS -Wall -fPIC -shared)                            # lib's 
 set(LIB_SOURCE)                                                         # lib's source file
 set(LIB_HEADER)                                                         # lib's header file
 set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/out)                                                      
-file(GLOB LIB_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c")
+file(GLOB LIB_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cc")
 file(GLOB LIB_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
 file(COPY ${LIB_HEADER} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/tests)
 

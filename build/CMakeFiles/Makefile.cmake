@@ -136,5 +136,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/algorithm.dir/DependInfo.cmake"
+  "tests/CMakeFiles/queue_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/graph_test.dir/DependInfo.cmake"
   )

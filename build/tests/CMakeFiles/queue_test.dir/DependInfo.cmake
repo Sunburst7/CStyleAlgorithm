@@ -8,13 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/CStyleAlgorithm/src/Graph.cc" "CMakeFiles/algorithm.dir/src/Graph.cc.o" "gcc" "CMakeFiles/algorithm.dir/src/Graph.cc.o.d"
-  "/home/CStyleAlgorithm/src/Queue.cc" "CMakeFiles/algorithm.dir/src/Queue.cc.o" "gcc" "CMakeFiles/algorithm.dir/src/Queue.cc.o.d"
-  "/home/CStyleAlgorithm/src/Stack.cc" "CMakeFiles/algorithm.dir/src/Stack.cc.o" "gcc" "CMakeFiles/algorithm.dir/src/Stack.cc.o.d"
+  "/home/CStyleAlgorithm/tests/QueueTest.cpp" "tests/CMakeFiles/queue_test.dir/QueueTest.cpp.o" "gcc" "tests/CMakeFiles/queue_test.dir/QueueTest.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/CStyleAlgorithm/build/CMakeFiles/algorithm.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
