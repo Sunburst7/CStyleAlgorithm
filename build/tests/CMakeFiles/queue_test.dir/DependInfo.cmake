@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/CStyleAlgorithm/tests/QueueTest.cpp" "tests/CMakeFiles/queue_test.dir/QueueTest.cpp.o" "gcc" "tests/CMakeFiles/queue_test.dir/QueueTest.cpp.o.d"
+  "/home/sunburst7/workspace/CStyleAlgorithm/tests/QueueTest.cc" "tests/CMakeFiles/queue_test.dir/QueueTest.cc.o" "gcc" "tests/CMakeFiles/queue_test.dir/QueueTest.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/CStyleAlgorithm/build/CMakeFiles/algorithm.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

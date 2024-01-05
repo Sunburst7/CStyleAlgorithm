@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../out/libalgorithm.pdb"
-  "../out/libalgorithm.so"
+  "/home/sunburst7/workspace/CStyleAlgorithm/out/libalgorithm.pdb"
+  "/home/sunburst7/workspace/CStyleAlgorithm/out/libalgorithm.so"
   "CMakeFiles/algorithm.dir/src/Graph.cc.o"
   "CMakeFiles/algorithm.dir/src/Graph.cc.o.d"
   "CMakeFiles/algorithm.dir/src/Queue.cc.o"

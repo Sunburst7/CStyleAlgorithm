@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/queue_test.dir/QueueTest.cpp.o -o ../../out/queue_test  -Wl,-rpath,/home/CStyleAlgorithm/out:/usr/local/lib ../../out/libalgorithm.so -lpthread /usr/local/lib/libgtest.so.1.14.0 
+/usr/bin/c++ -rdynamic CMakeFiles/queue_test.dir/QueueTest.cc.o -o /home/sunburst7/workspace/CStyleAlgorithm/out/queue_test  -Wl,-rpath,/home/sunburst7/workspace/CStyleAlgorithm/out /home/sunburst7/workspace/CStyleAlgorithm/out/libalgorithm.so -lpthread /usr/local/lib/libgtest.a 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "../../out/queue_test"
-  "../../out/queue_test.pdb"
-  "CMakeFiles/queue_test.dir/QueueTest.cpp.o"
-  "CMakeFiles/queue_test.dir/QueueTest.cpp.o.d"
+  "/home/sunburst7/workspace/CStyleAlgorithm/out/queue_test"
+  "/home/sunburst7/workspace/CStyleAlgorithm/out/queue_test.pdb"
+  "CMakeFiles/queue_test.dir/QueueTest.cc.o"
+  "CMakeFiles/queue_test.dir/QueueTest.cc.o.d"
   "queue_test[1]_tests.cmake"
 )
 

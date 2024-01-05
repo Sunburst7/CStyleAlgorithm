@@ -1,4 +1,4 @@
-# Install script for directory: /home/CStyleAlgorithm/tests
+# Install script for directory: /home/sunburst7/workspace/CStyleAlgorithm/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

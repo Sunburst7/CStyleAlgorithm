@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libalgorithm.so -o ../out/libalgorithm.so CMakeFiles/algorithm.dir/src/Graph.cc.o CMakeFiles/algorithm.dir/src/Queue.cc.o CMakeFiles/algorithm.dir/src/Stack.cc.o 
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libalgorithm.so -o /home/sunburst7/workspace/CStyleAlgorithm/out/libalgorithm.so CMakeFiles/algorithm.dir/src/Graph.cc.o CMakeFiles/algorithm.dir/src/Queue.cc.o CMakeFiles/algorithm.dir/src/Stack.cc.o 

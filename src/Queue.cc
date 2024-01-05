@@ -46,7 +46,7 @@ void Enqueue(Queue* q, ElemType a)
 {
     if (Size(q) == MAX_QUEUE_SIZE - 1) // Avaliable Space Is MAX_QUEUE_SIZE - 1
     {
-        LOG_WARNING("Queue Is Full, Size %d\n", MAX_QUEUE_SIZE - 1);
+        LOG_WARNING("Queue Is Full, Size %d", MAX_QUEUE_SIZE - 1);
         return;
     }
     q->e[q->rear] = a;
