@@ -27,14 +27,11 @@ typedef struct Graph{
 	int bfspath[MAX_VERTEX_NUM];
 }Graph; 
 
-LIB_API Graph* CreateGraph(int vexnum);
-
-LIB_API void DeleteGraph(Graph* g);
-
+LIB_API Graph* InitGraph();
+LIB_API void PurgeGraph(Graph* g);
 LIB_API void AddArc(Graph* g, char a, char b, ValueType w);
-
-LIB_API void BFS(Graph* g);
-
-LIB_API void DFS(Graph* g);
+LIB_API void PrintGraph(Graph* g);
+LIB_API bool BFS(Graph* g, char a);
+LIB_API void DFS(Graph* g, char a);
 
 #endif // _GRAPH_H_

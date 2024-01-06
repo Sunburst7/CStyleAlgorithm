@@ -4,6 +4,4 @@ add_test([=[QueueTest.EnqueueAndDequeueAndSize]=]  /home/sunburst7/workspace/CSt
 set_tests_properties([=[QueueTest.EnqueueAndDequeueAndSize]=]  PROPERTIES WORKING_DIRECTORY /home/sunburst7/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[QueueTest.QueueIsEmpty]=]  /home/sunburst7/workspace/CStyleAlgorithm/out/queue_test [==[--gtest_filter=QueueTest.QueueIsEmpty]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[QueueTest.QueueIsEmpty]=]  PROPERTIES WORKING_DIRECTORY /home/sunburst7/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[QueueTest.PurgeQueue]=]  /home/sunburst7/workspace/CStyleAlgorithm/out/queue_test [==[--gtest_filter=QueueTest.PurgeQueue]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[QueueTest.PurgeQueue]=]  PROPERTIES WORKING_DIRECTORY /home/sunburst7/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  queue_test_TESTS QueueTest.InitializeQueue QueueTest.EnqueueAndDequeueAndSize QueueTest.QueueIsEmpty QueueTest.PurgeQueue)
+set(  queue_test_TESTS QueueTest.InitializeQueue QueueTest.EnqueueAndDequeueAndSize QueueTest.QueueIsEmpty)

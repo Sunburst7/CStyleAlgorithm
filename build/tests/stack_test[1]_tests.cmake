@@ -4,6 +4,4 @@ add_test([=[StackTest.PushAndPopAndSize]=]  /home/sunburst7/workspace/CStyleAlgo
 set_tests_properties([=[StackTest.PushAndPopAndSize]=]  PROPERTIES WORKING_DIRECTORY /home/sunburst7/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[StackTest.StackIsEmpty]=]  /home/sunburst7/workspace/CStyleAlgorithm/out/stack_test [==[--gtest_filter=StackTest.StackIsEmpty]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[StackTest.StackIsEmpty]=]  PROPERTIES WORKING_DIRECTORY /home/sunburst7/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[StackTest.PurgeStack]=]  /home/sunburst7/workspace/CStyleAlgorithm/out/stack_test [==[--gtest_filter=StackTest.PurgeStack]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[StackTest.PurgeStack]=]  PROPERTIES WORKING_DIRECTORY /home/sunburst7/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  stack_test_TESTS StackTest.InitializeStack StackTest.PushAndPopAndSize StackTest.StackIsEmpty StackTest.PurgeStack)
+set(  stack_test_TESTS StackTest.InitializeStack StackTest.PushAndPopAndSize StackTest.StackIsEmpty)

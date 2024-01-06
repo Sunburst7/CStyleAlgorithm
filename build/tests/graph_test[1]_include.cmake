@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunburst7/workspace/CStyleAlgorithm/build/tests/graph_test[1]_tests.cmake")
+  include("/home/sunburst7/workspace/CStyleAlgorithm/build/tests/graph_test[1]_tests.cmake")
+else()
+  add_test(graph_test_NOT_BUILT graph_test_NOT_BUILT)
+endif()

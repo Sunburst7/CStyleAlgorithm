@@ -13,6 +13,8 @@ TEST(StackTest, InitializeStack)
     Stack* s = InitStack();
 	EXPECT_EQ(s->top, -1);
     EXPECT_EQ(Size(s), 0);
+
+    PurgeStack(s);
 }
 
 TEST(StackTest, PushAndPopAndSize)
@@ -40,6 +42,8 @@ TEST(StackTest, PushAndPopAndSize)
     ElemType e1 = Pop(s);
     EXPECT_EQ(e1, INVALID_ELEM_VALUE);
     EXPECT_EQ(Size(s), 0);
+
+    PurgeStack(s);
 }
 
 TEST(StackTest, StackIsEmpty)
@@ -52,13 +56,6 @@ TEST(StackTest, StackIsEmpty)
 
     Pop(s);
     EXPECT_EQ(IsEmpty(s), true);
-}
-
-TEST(StackTest, PurgeStack)
-{
-    Stack* s = InitStack();
-    Push(s, 1);
-    EXPECT_EQ(Size(s), 1);
 
     PurgeStack(s);
 }

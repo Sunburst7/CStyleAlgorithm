@@ -155,6 +155,19 @@ stack_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/stack_test.dir/build.make tests/CMakeFiles/stack_test.dir/build
 .PHONY : stack_test/fast
 
+#=============================================================================
+# Target rules for targets named graph_test
+
+# Build rule for target.
+graph_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph_test
+.PHONY : graph_test
+
+# fast build rule for target.
+graph_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/build
+.PHONY : graph_test/fast
+
 src/Graph.o: src/Graph.cc.o
 .PHONY : src/Graph.o
 
@@ -236,6 +249,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
+	@echo "... graph_test"
 	@echo "... queue_test"
 	@echo "... stack_test"
 	@echo "... src/Graph.o"

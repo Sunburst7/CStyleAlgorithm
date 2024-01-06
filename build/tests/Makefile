@@ -147,6 +147,44 @@ stack_test/fast:
 	cd /home/sunburst7/workspace/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/stack_test.dir/build.make tests/CMakeFiles/stack_test.dir/build
 .PHONY : stack_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/graph_test.dir/rule:
+	cd /home/sunburst7/workspace/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/graph_test.dir/rule
+.PHONY : tests/CMakeFiles/graph_test.dir/rule
+
+# Convenience name for target.
+graph_test: tests/CMakeFiles/graph_test.dir/rule
+.PHONY : graph_test
+
+# fast build rule for target.
+graph_test/fast:
+	cd /home/sunburst7/workspace/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/build
+.PHONY : graph_test/fast
+
+GraphTest.o: GraphTest.cc.o
+.PHONY : GraphTest.o
+
+# target to build an object file
+GraphTest.cc.o:
+	cd /home/sunburst7/workspace/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/GraphTest.cc.o
+.PHONY : GraphTest.cc.o
+
+GraphTest.i: GraphTest.cc.i
+.PHONY : GraphTest.i
+
+# target to preprocess a source file
+GraphTest.cc.i:
+	cd /home/sunburst7/workspace/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/GraphTest.cc.i
+.PHONY : GraphTest.cc.i
+
+GraphTest.s: GraphTest.cc.s
+.PHONY : GraphTest.s
+
+# target to generate assembly for a file
+GraphTest.cc.s:
+	cd /home/sunburst7/workspace/CStyleAlgorithm/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/graph_test.dir/build.make tests/CMakeFiles/graph_test.dir/GraphTest.cc.s
+.PHONY : GraphTest.cc.s
+
 QueueTest.o: QueueTest.cc.o
 .PHONY : QueueTest.o
 
@@ -203,8 +241,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... graph_test"
 	@echo "... queue_test"
 	@echo "... stack_test"
+	@echo "... GraphTest.o"
+	@echo "... GraphTest.i"
+	@echo "... GraphTest.s"
 	@echo "... QueueTest.o"
 	@echo "... QueueTest.i"
 	@echo "... QueueTest.s"

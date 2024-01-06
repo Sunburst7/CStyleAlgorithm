@@ -2,10 +2,12 @@ find_package(GTest REQUIRED)
 set(CMAKE_VERBOSE_MAKEFILE on)
 add_executable(queue_test QueueTest.cc)
 add_executable(stack_test StackTest.cc)
+add_executable(graph_test GraphTest.cc)
 
 set(targets_list
     queue_test
-    stack_test)
+    stack_test
+    graph_test)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/out) 
 link_directories(${CMAKE_SOURCE_DIR}/out)

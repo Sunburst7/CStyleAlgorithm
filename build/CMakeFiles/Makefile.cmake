@@ -143,4 +143,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/algorithm.dir/DependInfo.cmake"
   "tests/CMakeFiles/queue_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/stack_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/graph_test.dir/DependInfo.cmake"
   )

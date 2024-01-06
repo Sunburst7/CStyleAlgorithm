@@ -67,4 +67,5 @@ CMakeFiles/algorithm.dir/src/Graph.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+ /home/sunburst7/workspace/CStyleAlgorithm/src/Queue.h

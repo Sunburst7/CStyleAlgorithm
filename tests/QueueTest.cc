@@ -14,6 +14,7 @@ TEST(QueueTest, InitializeQueue)
 	EXPECT_EQ(q->front, 0);
     EXPECT_EQ(q->rear, 0);
     EXPECT_EQ(Size(q), 0);
+    PurgeQueue(q);
 }
 
 TEST(QueueTest, EnqueueAndDequeueAndSize)
@@ -41,6 +42,7 @@ TEST(QueueTest, EnqueueAndDequeueAndSize)
     ElemType e1 = Dequeue(q);
     EXPECT_EQ(e1, INVALID_ELEM_VALUE);
     EXPECT_EQ(Size(q), 0);
+    PurgeQueue(q);
 }
 
 TEST(QueueTest, QueueIsEmpty)
@@ -53,14 +55,6 @@ TEST(QueueTest, QueueIsEmpty)
 
     Dequeue(q);
     EXPECT_EQ(IsEmpty(q), true);
-}
-
-TEST(QueueTest, PurgeQueue)
-{
-    Queue* q = InitQueue();
-    Enqueue(q, 1);
-    EXPECT_EQ(Size(q), 1);
-
     PurgeQueue(q);
 }
 
