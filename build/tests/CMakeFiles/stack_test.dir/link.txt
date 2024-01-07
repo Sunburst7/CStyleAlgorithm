@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/stack_test.dir/StackTest.cc.o -o /home/sunburst7/workspace/CStyleAlgorithm/out/stack_test  -Wl,-rpath,/home/sunburst7/workspace/CStyleAlgorithm/out /home/sunburst7/workspace/CStyleAlgorithm/out/libalgorithm.so -lpthread /usr/local/lib/libgtest.a 

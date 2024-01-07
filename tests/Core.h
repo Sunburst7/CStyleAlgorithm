@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include "Alglog.h"
 
-#define MAX_QUEUE_SIZE 5
-#define MAX_STACK_SIZE 5
+#define MAX_QUEUE_SIZE 10
+#define MAX_STACK_SIZE 10
 #define MAX_VERTEX_NUM 10
 #define ElemType int
 #define INVALID_ELEM_VALUE 1<<31

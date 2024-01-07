@@ -30,8 +30,7 @@ typedef struct Graph{
 LIB_API Graph* InitGraph();
 LIB_API void PurgeGraph(Graph* g);
 LIB_API void AddArc(Graph* g, char a, char b, ValueType w);
-LIB_API void PrintGraph(Graph* g);
-LIB_API void BFS(Graph* g, char a);
-LIB_API void DFS(Graph* g, char a);
+LIB_API bool BFS(Graph* g, char a);
+LIB_API void DFS(Graph* g);
 
 #endif // _GRAPH_H_

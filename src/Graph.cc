@@ -82,21 +82,6 @@ void AddArc(Graph* g, char a, char b, ValueType w)
     g->arcnum++;
 }
 
-void PrintGraph(Graph* g)
-{
-    for (int i = 0; i < g->vexnum; i++)
-    {
-        printf("%d | %c |", i, g->vertices[i].data);
-        ArcNode* p = g->vertices[i].firstarc;
-        while (p)
-        {
-            printf("--->%d(%d)", p->adjvex, p->value);
-            p = p->nextarc;
-        }
-        printf("\n");
-    }
-}
-
 static int IndexOf(Graph* g, char a)
 {
     for(int i = 0; i < g->vexnum; i++)
@@ -118,9 +103,11 @@ bool BFS(Graph* g, char a)
     }
     bool visit[g->vexnum] = { false };   
     Queue* q = InitQueue();
+
     visit[ia] = true;
-    Enqueue(q, ia);
     g->bfspath[path_idx++] = ia;
+    Enqueue(q, ia);
+    
     while(IsEmpty(q))
     {
         int p = Dequeue(q);
@@ -135,11 +122,28 @@ bool BFS(Graph* g, char a)
             }
         }
     }
-
     return true;
 }  
 
-void DFS(Graph* g, char a)
+void DFSTraver(Graph* g, int p, bool visit[], int path)
 {
+    g->dfspath[path++] = p;
+    visit[p] = true;
+    for (ArcNode* adj_arc = g->vertices[p].firstarc; adj_arc != nullptr; adj_arc = adj_arc->nextarc)
+    {
+        int w = adj_arc->adjvex;
+        if (!visit[w])
+            DFSTraver(g, w, visit, path);
+    }
+}
 
+void DFS(Graph* g)
+{
+    int path_idx = 0; // recode dfs path index
+    bool visit[g->vexnum] = { false };
+    for (int i = 0; i < g->vexnum; i++)
+    {
+        if (!visit[i])
+            DFSTraver(g, i, visit, path_idx);
+    }
 }

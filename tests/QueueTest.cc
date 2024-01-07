@@ -30,7 +30,7 @@ TEST(QueueTest, EnqueueAndDequeueAndSize)
         //EXPECT_EQ(Rear(q), i);
     }
     Enqueue(q, 5);
-    EXPECT_EQ(Size(q), 4);
+    EXPECT_EQ(Size(q), MAX_QUEUE_SIZE - 1);
 
     for (int i = 1 ; i <= max_queue_size; i++)
     {

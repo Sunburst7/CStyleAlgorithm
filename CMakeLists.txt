@@ -1,5 +1,5 @@
-project(CStyleAlgorithm)
 cmake_minimum_required(VERSION 2.28)
+project(CStyleAlgorithm)
 enable_language(CXX)
 if (CMAKE_VERSION VERSION_LESS "3.1")
     if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")

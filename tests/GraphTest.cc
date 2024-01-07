@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "Visualize.h"
 #include "Graph.h"
 
 TEST(GraphTest, InitGraphAndAddArc)
