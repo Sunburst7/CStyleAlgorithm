@@ -2,7 +2,7 @@
  * @Author       : hh
  * @Date         : 2024-01-03 10:57:28
  * @LastEditors  : your Name
- * @LastEditTime : 2024-01-03 15:13:34
+ * @LastEditTime : 2024-01-11 18:18:42
  * @Description  : 
  */
 #ifndef _ALGLOG_H_
@@ -16,8 +16,15 @@
         printf("[ TRACE ]: \t");\
         printf(fmt "\n", ##__VA_ARGS__); \
     } while(0);
+#define LOG_TARCE_ARRAY(arr, len, format) \
+    do { \
+        printf("[ TRACE ]: \t");\
+        for (int i = 0; i < len; i++) printf(format" ", arr[i]); \
+        printf("\n"); \
+    } while(0);
 #else
 #define LOG_TRACE(fmt, args...) 
+#define LOG_TARCE_ARRAY(arr, len, format)
 #endif
 #define LOG_WARNING(fmt, ...) \
     do { \
