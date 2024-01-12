@@ -1,12 +1,13 @@
 /*
  * @Author       : hh
  * @Date         : 2024-01-03 11:39:02
- * @LastEditors  : hh
- * @LastEditTime : 2024-01-04 10:01:32
+ * @LastEditors  : your Name
+ * @LastEditTime : 2024-01-12 15:51:07
  * @Description  : 
  */
 #include <gtest/gtest.h>
 #include "Queue.h"
+#include "Visualize.h"
 
 TEST(QueueTest, InitializeQueue)
 {
@@ -27,10 +28,10 @@ TEST(QueueTest, EnqueueAndDequeueAndSize)
     {
         Enqueue(q, i);
         EXPECT_EQ(Size(q), i);
-        //EXPECT_EQ(Rear(q), i);
     }
     Enqueue(q, 5);
     EXPECT_EQ(Size(q), MAX_QUEUE_SIZE - 1);
+    PrintQueue(q);
 
     for (int i = 1 ; i <= max_queue_size; i++)
     {

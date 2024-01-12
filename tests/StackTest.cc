@@ -1,19 +1,20 @@
 /*
  * @Author       : hh
  * @Date         : 2024-01-03 11:39:02
- * @LastEditors  : hh
- * @LastEditTime : 2024-01-04 10:01:32
+ * @LastEditors  : your Name
+ * @LastEditTime : 2024-01-12 14:22:57
  * @Description  : 
  */
 #include <gtest/gtest.h>
 #include "Stack.h"
+#include "Visualize.h"
 
 TEST(StackTest, InitializeStack)
 {
     Stack* s = InitStack();
 	EXPECT_EQ(s->top, -1);
     EXPECT_EQ(Size(s), 0);
-
+    
     PurgeStack(s);
 }
 
@@ -31,6 +32,7 @@ TEST(StackTest, PushAndPopAndSize)
     Push(s, MAX_STACK_SIZE + 1);
     EXPECT_EQ(Size(s), MAX_STACK_SIZE);
     EXPECT_EQ(Top(s), MAX_STACK_SIZE);
+    PrintStack(s);
 
     for (int i = MAX_STACK_SIZE; i > 0; i--)
     {

@@ -31,7 +31,17 @@ void PurgeGraph(Graph* g)
 void AddNode(Graph* g, char a)
 {
     int ia = -1;
-    //for (int i = 0; i < g->vexnum; i++)
+    for (int i = 0; i < g->vexnum; i++)
+    {
+        if (a == g->vertices[i].data)
+            ia = i;
+    }
+    if (ia != -1)
+    {
+        LOG_WARNING("Graph Node %c have existed", a);
+        return;
+    }
+    g->vertices[g->vexnum++].data = a;
 }
 
 void AddArc(Graph* g, char a, char b, ValueType w)
