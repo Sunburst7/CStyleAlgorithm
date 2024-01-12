@@ -28,3 +28,4 @@ bash memcheck.sh
 | queue    |                       | ✔   |                                     |
 | graph    | Build adjacency graph | ✔   | Build a adjacency graph             |
 |          | Add arc(and add node) | ✔   | Adding arcs while also adding nodes |
+|          | DFS and BFS | ✔   | DFS and BFS |
