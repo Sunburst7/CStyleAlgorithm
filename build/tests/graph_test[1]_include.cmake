@@ -1,5 +1,0 @@
-if(EXISTS "/home/huhao/workspace/CStyleAlgorithm/build/tests/graph_test[1]_tests.cmake")
-  include("/home/huhao/workspace/CStyleAlgorithm/build/tests/graph_test[1]_tests.cmake")
-else()
-  add_test(graph_test_NOT_BUILT graph_test_NOT_BUILT)
-endif()
