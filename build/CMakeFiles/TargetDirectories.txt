@@ -1,0 +1,8 @@
+/home/huhao/workspace/CStyleAlgorithm/build/CMakeFiles/algorithm.dir
+/home/huhao/workspace/CStyleAlgorithm/build/CMakeFiles/edit_cache.dir
+/home/huhao/workspace/CStyleAlgorithm/build/CMakeFiles/rebuild_cache.dir
+/home/huhao/workspace/CStyleAlgorithm/build/tests/CMakeFiles/queue_test.dir
+/home/huhao/workspace/CStyleAlgorithm/build/tests/CMakeFiles/stack_test.dir
+/home/huhao/workspace/CStyleAlgorithm/build/tests/CMakeFiles/graph_test.dir
+/home/huhao/workspace/CStyleAlgorithm/build/tests/CMakeFiles/edit_cache.dir
+/home/huhao/workspace/CStyleAlgorithm/build/tests/CMakeFiles/rebuild_cache.dir

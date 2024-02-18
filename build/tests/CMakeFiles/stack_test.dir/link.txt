@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/stack_test.dir/StackTest.cc.o -o /home/huhao/workspace/CStyleAlgorithm/out/stack_test  -Wl,-rpath,/home/huhao/workspace/CStyleAlgorithm/out:/usr/local/lib /home/huhao/workspace/CStyleAlgorithm/out/libalgorithm.so -lpthread /usr/local/lib/libgtest.so.1.14.0 

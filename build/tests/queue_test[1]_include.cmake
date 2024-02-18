@@ -1,0 +1,5 @@
+if(EXISTS "/home/huhao/workspace/CStyleAlgorithm/build/tests/queue_test[1]_tests.cmake")
+  include("/home/huhao/workspace/CStyleAlgorithm/build/tests/queue_test[1]_tests.cmake")
+else()
+  add_test(queue_test_NOT_BUILT queue_test_NOT_BUILT)
+endif()

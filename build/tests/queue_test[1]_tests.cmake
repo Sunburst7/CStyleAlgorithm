@@ -1,0 +1,7 @@
+add_test([=[QueueTest.InitializeQueue]=]  /home/huhao/workspace/CStyleAlgorithm/out/queue_test [==[--gtest_filter=QueueTest.InitializeQueue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[QueueTest.InitializeQueue]=]  PROPERTIES WORKING_DIRECTORY /home/huhao/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[QueueTest.EnqueueAndDequeueAndSize]=]  /home/huhao/workspace/CStyleAlgorithm/out/queue_test [==[--gtest_filter=QueueTest.EnqueueAndDequeueAndSize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[QueueTest.EnqueueAndDequeueAndSize]=]  PROPERTIES WORKING_DIRECTORY /home/huhao/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[QueueTest.QueueIsEmpty]=]  /home/huhao/workspace/CStyleAlgorithm/out/queue_test [==[--gtest_filter=QueueTest.QueueIsEmpty]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[QueueTest.QueueIsEmpty]=]  PROPERTIES WORKING_DIRECTORY /home/huhao/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  queue_test_TESTS QueueTest.InitializeQueue QueueTest.EnqueueAndDequeueAndSize QueueTest.QueueIsEmpty)

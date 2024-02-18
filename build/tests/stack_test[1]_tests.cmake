@@ -1,0 +1,7 @@
+add_test([=[StackTest.InitializeStack]=]  /home/huhao/workspace/CStyleAlgorithm/out/stack_test [==[--gtest_filter=StackTest.InitializeStack]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StackTest.InitializeStack]=]  PROPERTIES WORKING_DIRECTORY /home/huhao/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[StackTest.PushAndPopAndSize]=]  /home/huhao/workspace/CStyleAlgorithm/out/stack_test [==[--gtest_filter=StackTest.PushAndPopAndSize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StackTest.PushAndPopAndSize]=]  PROPERTIES WORKING_DIRECTORY /home/huhao/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[StackTest.StackIsEmpty]=]  /home/huhao/workspace/CStyleAlgorithm/out/stack_test [==[--gtest_filter=StackTest.StackIsEmpty]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StackTest.StackIsEmpty]=]  PROPERTIES WORKING_DIRECTORY /home/huhao/workspace/CStyleAlgorithm/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  stack_test_TESTS StackTest.InitializeStack StackTest.PushAndPopAndSize StackTest.StackIsEmpty)
